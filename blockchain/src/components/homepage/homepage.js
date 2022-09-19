@@ -10,14 +10,16 @@ const Homepage = () => {
         function redirectLogin(){ 
             navigate('/login'); 
         }
+        function redirectVerify(){ 
+            navigate('/verify'); 
+        }
     return(
         <div className="homepage">
             <h1>Home Page</h1>
             <button onClick={redirectRegister}>REGISTER</button>
             <button onClick={redirectLogin}>LOGIN</button>
-
-
-   
+            <button onClick={redirectVerify}>VERIFY</button>
+            
         </div>
     )
 }
