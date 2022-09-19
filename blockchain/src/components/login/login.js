@@ -1,14 +1,9 @@
 import "./login.css";
-import { useNavigate} from 'react-router-dom'; 
+
 
 
 const Login = () => {
     
-    const navigate = useNavigate();
-        function redirectLogin(){ 
-            navigate('/login'); 
-        }
-
     return(
         <div className="login">
             <h1>Login</h1>

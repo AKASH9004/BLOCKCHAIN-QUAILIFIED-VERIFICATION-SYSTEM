@@ -15,7 +15,7 @@ const Register = () => {
             <input type="text" placeholder="Enter your Name"></input>
             <input type="text" placeholder="Enter your Email"></input>
             <input type="password" placeholder="Enter your Password"></input>
-            <input type="password" placeholder="Confirm Password"></input>
+            <input type="password" placeholder="Conform Password"></input>
             <div className="button" >REGISTER</div>
             <div>or</div>
             <div className="button" onClick={redirectLogin}>LOGIN</div>

@@ -2,6 +2,7 @@ import React from "react";
 import "./homepage.css"
 import { useNavigate} from 'react-router-dom'; 
 
+
 const Homepage = () => {
     const navigate = useNavigate(); 
         function redirectRegister(){ 
@@ -19,7 +20,7 @@ const Homepage = () => {
             <button onClick={redirectRegister}>REGISTER</button>
             <button onClick={redirectLogin}>LOGIN</button>
             <button onClick={redirectVerify}>VERIFY</button>
-            
+
         </div>
     )
 }

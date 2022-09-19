@@ -1,13 +1,8 @@
 import "./verify.css";
-import { useNavigate} from 'react-router-dom'; 
 
 
 const Verify = () => {
     
-    const navigate = useNavigate();
-        function redirectVerify(){ 
-            navigate('/verify'); 
-        }
 
     return(
         <div className="verify">
