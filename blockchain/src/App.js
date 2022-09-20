@@ -4,12 +4,18 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Homepage from './components/homepage/homepage';
 import Login from './components/login/login';
 import Verify from './components/verify/verify';
+import Navbar from './components/homepage/navbar';
+
 
 
 function App() {
   return (
+    <>
+    
     <div className="App">
+      
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route exact path="/" element={<Homepage/>}/>
         <Route exact path="/register" element={<Register/>}/>
@@ -19,6 +25,7 @@ function App() {
       </Routes>
       </BrowserRouter>
     </div>
+    </>
     /*<div className="App">
       
       <Register/>
