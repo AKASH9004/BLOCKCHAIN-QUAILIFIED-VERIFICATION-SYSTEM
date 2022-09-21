@@ -21,7 +21,6 @@ function App() {
         <Route exact path="/register" element={<Register/>}/>
         <Route exact path="/login" element={<Login/>}/>
         <Route exact path="/verify" element={<Verify/>}/>
-
       </Routes>
       </BrowserRouter>
     </div>

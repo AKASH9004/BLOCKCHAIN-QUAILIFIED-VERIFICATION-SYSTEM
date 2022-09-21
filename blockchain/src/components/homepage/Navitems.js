@@ -10,13 +10,13 @@ export const navItems = [
     {
       id: 2,
       title: "Register",
-      path: "./register",
+      path: "/register",
       cName: "nav-item",
     },
     {
       id: 3,
       title: "Login",
-      path: "./login",
+      path: "/login",
       cName: "nav-item",
     },
     {

@@ -1,0 +1,29 @@
+.container{
+    position: relative;
+    width: 1526px;
+    height: 617px;
+    border: 3px solid red;
+}
+
+.verify-container{
+    /*margin-top: -91px;
+    width: 853px;
+    float: left;*/
+    position: absolute;
+    top: 196px;
+    left: 1002px;
+    width: 432px;
+    height: 232px;
+    border: 3px solid green;
+}
+
+
+
+.homepage h1{
+    position: absolute;
+    top: 250px;
+    left: 134px;
+    width: 400px;
+    height: 90px;
+    border: 3px solid blue;
+}
