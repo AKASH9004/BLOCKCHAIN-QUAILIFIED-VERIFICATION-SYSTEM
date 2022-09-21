@@ -2,7 +2,7 @@
     position: relative;
     width: 1526px;
     height: 617px;
-    border: 3px solid red;
+    /*border: 3px solid red;*/
 }
 
 .verify-container{
@@ -11,19 +11,20 @@
     float: left;*/
     position: absolute;
     top: 196px;
-    left: 1002px;
+    left: 967px;
     width: 432px;
     height: 232px;
-    border: 3px solid green;
+    /*border: 3px solid green;*/
 }
 
 
 
 .homepage h1{
+    font-size: 50px;
     position: absolute;
-    top: 250px;
+    top: 191px;
     left: 134px;
-    width: 400px;
+    width: 599px;
     height: 90px;
-    border: 3px solid blue;
+    /*border: 3px solid blue;*/
 }
