@@ -1,14 +1,4 @@
-body {
-    background: rgb(2, 0, 36);
-    background: radial-gradient(
-      circle,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(30, 54, 59, 1) 0%,
-      rgba(93, 93, 116, 1) 100%
-    );
-  }
-  
-  .register {
+.register {
     display: flex !important;
     flex-direction: column;
     justify-content: center;
@@ -18,6 +8,7 @@ body {
     width: 100%;
     margin: auto;
   }
+  
   .register > form {
     width: 70%;
     border: 1px solid #dfdfdf;
