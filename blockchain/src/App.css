@@ -43,3 +43,9 @@
   background: #f0f2f5;
   font-family: Arial, sans-serif;
 }*/
+
+.App{
+  background-image: url(./components/homepage/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -19,11 +19,11 @@ export const navItems = [
       path: "/login",
       cName: "nav-item",
     },
-    {
+    /*{
       id: 4,
       title: "Verify",
       path: "./verify",
       cName: "nav-item",
-    },
+    },*/
   ];
   

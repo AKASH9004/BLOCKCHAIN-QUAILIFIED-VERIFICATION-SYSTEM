@@ -1,8 +1,9 @@
 import React from "react";
 import "./homepage.css"
-/*import { useNavigate} from 'react-router-dom';*/
-import Button from "./Button"
+/*import { useNavigate} from 'react-router-dom';
+import Button from "./Button"*/
 import Verify from "../verify/verify";
+
 
 
 
@@ -27,9 +28,13 @@ const Homepage = () => {
         </div>*/
         <>
         <div className="container">
-        <div className="homepage">
-            <h1>BLOCKCHAIN QUALIFIED:<br></br>VERICATION SYSTEM</h1>
+        
+        <div className="name">
+        <h1 id="name1">BLOCKCHAIN QUALIFIED:</h1>
+        <h1 id="name2" >VERIFICATION SYSTEM</h1>
+        <p>Blockchain Is Changing the World, It is Secured and easy to use.</p>
         </div>
+        
         <div className="verify-container">
             <Verify/>
         </div>

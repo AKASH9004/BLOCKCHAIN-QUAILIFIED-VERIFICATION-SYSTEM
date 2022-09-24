@@ -1,15 +1,16 @@
 .verify {
     position: absolute;
     width: 400px;
-    background: #fff;
+    /* background: #fff; */
     /* border: 1px solid #dddfe2; */
     /* box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%); */
-    border-radius: 8px;
-    padding: 1rem;
+    /* border-radius: 8px; */
     align-items: right;
     text-align: center;
     /*margin-left: 954px;
     margin-top: 186px;*/
+    text-align: center;
+    top: -249px;
 }
 
 
@@ -25,7 +26,7 @@
 }
 
 .verify .button {
-    background: #1877f2;
+   background: #1877f2; 
     border: 1px solid #1877f2;
     color: #fff;
     font-size: 1.25rem;
