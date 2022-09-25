@@ -19,12 +19,12 @@ const handleSubmit = (e) => {
     setIsSubmit(true);
   };
 
-//   useEffect(() => {
-//     console.log(formErrors);
-//     if (Object.keys(formErrors).length === 0 && isSubmit) {
-//       console.log(formValues);
-//     }
-//   }, [formErrors]);
+  useEffect(() => {
+    console.log(formErrors);
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      console.log(formValues);
+    }
+  }, [formErrors]);
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -52,7 +52,7 @@ const handleSubmit = (e) => {
   return(
     <div className="register">
             <form onSubmit={handleSubmit}>
-        <h1>Register Form</h1>
+        <h1>REGISTER FORM</h1>
         <div className="ui divider"></div>
         <div className="ui form">
           <div className="field">
@@ -61,7 +61,7 @@ const handleSubmit = (e) => {
               type="text"
               name="username"
               placeholder="Username"
-            //   value={formValues.username}
+              value={formValues.username}
             />
             </div>
           <p>{formErrors.username}</p>
@@ -94,8 +94,11 @@ const handleSubmit = (e) => {
             //   value={formValues.confirmPassword}
             />
             </div>
-          <p>{formErrors.password}</p>
+          <p>{formErrors.confirmPassword}</p>
+          <div className="button">
           <button className="fluid ui button blue">REGISTER</button>
+          </div>
+
         </div>
       </form>
         </div>
