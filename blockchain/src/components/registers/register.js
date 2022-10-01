@@ -64,13 +64,14 @@ const validate = (values) => {
   };
 
   return(
+    <div className="reg-screen">
     <div className="register">
         <form onSubmit={handleSubmit}>
-        <h1>REGISTER FORM</h1>
+        <h1>REGISTER</h1>
         <div className="ui divider"></div>
         <div className="ui form">
           <div className="field">
-            <label>Username</label>
+            
             <input
               type="text"
               name="username"
@@ -81,7 +82,7 @@ const validate = (values) => {
             </div>
           <p>{formErrors.username}</p>
           <div className="field">
-            <label>Email</label>
+            
             <input
               type="text"
               name="email"
@@ -92,7 +93,7 @@ const validate = (values) => {
             </div>
           <p>{formErrors.email}</p>
           <div className="field">
-            <label>Password</label>
+            
             <input
               type="password"
               name="password"
@@ -103,7 +104,7 @@ const validate = (values) => {
             </div>
             <p>{formErrors.password}</p>
             <div className="field">
-            <label>Confirm Password</label>
+            
             <input
               type="password"
               name="confirmPassword"
@@ -115,7 +116,7 @@ const validate = (values) => {
             <p>{formErrors.confirmPassword}</p>
             
             <div className="field">
-            <label>State</label>
+            
             <select name="state">
               <option>--SELECT STATE--</option>
               <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -159,7 +160,7 @@ const validate = (values) => {
             <p>{formErrors.state}</p>
           
             <div className="field">
-            <label>City</label>
+            
             <input
               type="text"
               name="city"
@@ -170,11 +171,12 @@ const validate = (values) => {
             </div>
           <p>{formErrors.city}</p>
 
-          <button className="fluid ui button blue">REGISTER</button>
+          <button className="reg-button">REGISTER</button>
           </div>
 
        
       </form>
+      </div>
       </div>
 )}
 
