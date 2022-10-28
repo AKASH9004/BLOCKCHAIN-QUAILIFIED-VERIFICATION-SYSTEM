@@ -117,8 +117,8 @@ const validate = (values) => {
             
             <div className="field">
             
-            <select name="state">
-              <option>--SELECT STATE--</option>
+            <select name="STATE" required>
+              <option></option>
               <option value="Andhra Pradesh">Andhra Pradesh</option>
               <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
               <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -157,8 +157,8 @@ const validate = (values) => {
               <option value="West Bengal">West Bengal</option>
             </select>
             </div>
+            
             <p>{formErrors.state}</p>
-          
             <div className="field">
             
             <input
