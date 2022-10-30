@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useNavigate} from 'react-router-dom'; 
 
 function Register() {
-const initialValues = {username: "", email: "", password: "", confirmPassword: "", state: "", city: ""};
+const initialValues = {userid: "", email: "", password: "", confirmPassword: "", college_num: "", college_name: "",secret_key:""};
 const [formValues, setFormValues] = useState(initialValues);
 const [formErrors, setFormErrors] = useState({});
 const [isSubmit, setIsSubmit] = useState(false);
@@ -38,8 +38,8 @@ const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     const strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
-    if (!values.username) {
-      errors.username = "Username is required!";
+    if (!values.userid) {
+      errors.userid = "Userid is required!";
     }
     if (!values.email) {
       errors.email = "Email is required!";
@@ -54,11 +54,14 @@ const validate = (values) => {
     if (values.confirmPassword !== values.password) {
         errors.confirmPassword = "Passwords don't match!";
     }
-    if (values.state === null) {
-      errors.state = "Select a state!";
+    if (!values.college_num) {
+      errors.college_num = "Enter Your College Number";
     }
-    if (!values.city) {
-      errors.city = "Please enter your city!";
+    if (!values.college_name) {
+      errors.college_name = "Enter Your College Name";
+    }
+    if (!values.secret_key) {
+      errors.secret_key= "Enter Your College Name";
     }
     return errors;
   };
@@ -73,20 +76,20 @@ const validate = (values) => {
           <div className="field">
             
             <input
-              type="text"
-              name="username"
-              placeholder="Username"
-              value={formValues.username}
+              type="number"
+              name="userid"
+              placeholder="USER ID"
+              value={formValues.userid}
               onChange={handleChange}
             />
             </div>
-          <p>{formErrors.username}</p>
+          <p>{formErrors.userid}</p>
           <div className="field">
             
             <input
               type="text"
               name="email"
-              placeholder="Email"
+              placeholder="EMAIL"
               value={formValues.email}
               onChange={handleChange}
             />
@@ -97,7 +100,7 @@ const validate = (values) => {
             <input
               type="password"
               name="password"
-              placeholder="Password"
+              placeholder="PASSWORD"
               value={formValues.password}
               onChange={handleChange}
             />
@@ -108,7 +111,7 @@ const validate = (values) => {
             <input
               type="password"
               name="confirmPassword"
-              placeholder="confirmPassword"
+              placeholder="CONFORM PASSWORD"
               value={formValues.confirmPassword}
               onChange={handleChange}
             />
@@ -116,6 +119,18 @@ const validate = (values) => {
             <p>{formErrors.confirmPassword}</p>
             
             <div className="field">
+            
+            <input
+              type="number"
+              name="college_num"
+              placeholder="COLLEGE NUMBER"
+              value={formValues.college_num}
+              onChange={handleChange}
+            />
+            </div>
+            <p>{formErrors.college_num}</p>
+
+            {/*<div className="field">
             
             <select name="STATE" required>
               <option></option>
@@ -158,18 +173,44 @@ const validate = (values) => {
             </select>
             </div>
             
-            <p>{formErrors.state}</p>
+  <p>{formErrors.state}</p>*/}
             <div className="field">
             
             <input
               type="text"
-              name="city"
-              placeholder="City"
-              value={formValues.city}
+              name="college_name"
+              placeholder="COLLEGE NAME"
+              value={formValues.college_name}
               onChange={handleChange}
             />
+            <p>{formErrors.college_name}</p>
             </div>
-          <p>{formErrors.city}</p>
+          
+
+          <div className="field">
+            
+            <input
+              type="text"
+              name="college_link"
+              placeholder="COLLEGE LINK"
+              value={formValues.college_link}
+              onChange={handleChange}
+            />
+          </div>
+          <p></p>
+
+          <div className="field">
+            
+            <input
+              type="text"
+              name="secret_key"
+              placeholder="SECRET KEY"
+              value={formValues.secret_key}
+              onChange={handleChange}
+            />
+            <p>{formErrors.secret_key}</p>
+
+          </div>
 
           <button className="reg-button">REGISTER</button>
           </div>
