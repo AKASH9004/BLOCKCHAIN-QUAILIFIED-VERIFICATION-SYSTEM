@@ -6,7 +6,7 @@ import { useNavigate} from 'react-router-dom';
 
 function Login () {
 
-    const initialValues = { email: "", password: ""};
+    const initialValues = { userid: "", password: ""};
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
@@ -37,8 +37,8 @@ function Login () {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
         const strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
         
-        if (!values.email) {
-          errors.email = "Email is required!";
+        if (!values.userid) {
+          errors.email = "userid is required!";
         } else if (!regex.test(values.email)) {
           errors.email = "This is not a valid email format!";
         }
@@ -61,9 +61,9 @@ function Login () {
                 <div className="field">
                 <input
                     type="text"
-                    name="email"
-                    placeholder="Enter your Email"
-                    value={formValues.email}
+                    name="userid"
+                    placeholder="Enter your User Id"
+                    value={formValues.userid}
                     onChange={handleChange}
                 />
                 </div>
@@ -80,7 +80,8 @@ function Login () {
                 </div>
                 <p>{formErrors.password}</p>
 
-                <input type="text" placeholder="Enter your Private Key"></input>
+                {/*<input type="text" placeholder="Enter your Private Key"></input>*/}
+
                 <button className="log-button">LOGIN</button>
                 </form>
             </div>

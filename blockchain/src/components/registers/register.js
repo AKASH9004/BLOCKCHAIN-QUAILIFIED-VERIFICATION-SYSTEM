@@ -111,7 +111,7 @@ const validate = (values) => {
             <input
               type="password"
               name="confirmPassword"
-              placeholder="CONFORM PASSWORD"
+              placeholder="CONFIRM PASSWORD"
               value={formValues.confirmPassword}
               onChange={handleChange}
             />
