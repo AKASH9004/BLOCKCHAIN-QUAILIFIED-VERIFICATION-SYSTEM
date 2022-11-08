@@ -6,6 +6,11 @@ import { useNavigate} from 'react-router-dom';
 
 function Login () {
 
+  const navigate = useNavigate();
+function redirectUploadfile(){ 
+  navigate('/uploadfile'); 
+};
+
     const initialValues = { userid: "", password: ""};
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState({});
