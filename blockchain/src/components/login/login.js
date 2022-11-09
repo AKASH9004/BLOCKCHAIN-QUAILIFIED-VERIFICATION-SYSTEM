@@ -87,7 +87,7 @@ function redirectUploadfile(){
 
                 {/*<input type="text" placeholder="Enter your Private Key"></input>*/}
 
-                <button className="log-button">LOGIN</button>
+                <button className="log-button" onclick = {redirectUploadfile()}>LOGIN</button>
                 </form>
             </div>
         </div> 
