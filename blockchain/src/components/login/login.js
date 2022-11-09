@@ -8,7 +8,7 @@ function Login () {
 
   const navigate = useNavigate();
 function redirectUploadfile(){ 
-  navigate('/uploadfile'); 
+  navigate('localhost:3000/uploadfile'); 
 };
 
     const initialValues = { userid: "", password: ""};
@@ -44,9 +44,8 @@ function redirectUploadfile(){
         
         if (!values.userid) {
           errors.email = "userid is required!";
-        } else if (!regex.test(values.email)) {
-          errors.email = "This is not a valid email format!";
-        }
+        } 
+
         if (!values.password) {
           errors.password = "Password is required";
         } else if (!strongRegex.test(values.password)) {

@@ -5,6 +5,8 @@ import Homepage from './components/homepage/homepage';
 import Login from './components/login/login';
 import Verify from './components/verify/verify';
 import Navbar from './components/homepage/navbar';
+import Mailer from './components/FileUpload/uploadfile';
+
 
 
 
@@ -21,6 +23,8 @@ function App() {
         <Route exact path="/register" element={<Register/>}/>
         <Route exact path="/login" element={<Login/>}/>
         <Route exact path="/verify" element={<Verify/>}/>
+        <Route exact path="/uploadfile" element={<Mailer/>}/>
+
       </Routes>
       </BrowserRouter>
     </div>

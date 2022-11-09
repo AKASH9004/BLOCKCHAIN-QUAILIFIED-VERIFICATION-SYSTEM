@@ -212,7 +212,7 @@ const validate = (values) => {
 
           </div>
 
-          <button className="reg-button">REGISTER</button>
+          <button className="reg-button" onclick = {redirectLogin} >REGISTER</button>
           </div>
 
        
