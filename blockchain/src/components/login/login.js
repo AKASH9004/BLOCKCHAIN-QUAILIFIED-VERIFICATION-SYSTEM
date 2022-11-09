@@ -1,6 +1,7 @@
 import "./login.css";
 import { useState, useEffect } from "react";
 import { useNavigate} from 'react-router-dom'; 
+import {Link} from "react-router-dom";
 
 
 
@@ -8,7 +9,7 @@ function Login () {
 
   const navigate = useNavigate();
 function redirectUploadfile(){ 
-  navigate('localhost:3000/uploadfile'); 
+  navigate('/uploadfile'); 
 };
 
     const initialValues = { userid: "", password: ""};
@@ -86,7 +87,7 @@ function redirectUploadfile(){
 
                 {/*<input type="text" placeholder="Enter your Private Key"></input>*/}
 
-                <button className="log-button" onclick = {redirectUploadfile}>LOGIN</button>
+                <button className="log-button"><Link to="/uploadfile">LOGIN </Link></button>
                 </form>
             </div>
         </div> 

@@ -48,10 +48,7 @@ const Mailer = () => {
                 />
                 </div>
 
-                <div className="field">
-                <textarea name='message' rows='4'/>
-                </div>
-
+                
                 <button className="uploadfile-button" value="Send" >UPLOAD</button>
             </div>
             </form>

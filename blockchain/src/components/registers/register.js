@@ -1,6 +1,7 @@
 import "./register.css";
 import { useState, useEffect } from "react";
 import { useNavigate} from 'react-router-dom'; 
+import {Link} from "react-router-dom";
 
 function Register() {
 const initialValues = {userid: "", email: "", password: "", confirmPassword: "", college_num: "", college_name: "",secret_key:""};
@@ -212,7 +213,8 @@ const validate = (values) => {
 
           </div>
 
-          <button className="reg-button" onclick = {redirectLogin} >REGISTER</button>
+          {/* <button className="reg-button">REGISTER</button> */}
+          <button className="reg-button"><Link to="/login">REGISTER </Link></button>
           </div>
 
        
