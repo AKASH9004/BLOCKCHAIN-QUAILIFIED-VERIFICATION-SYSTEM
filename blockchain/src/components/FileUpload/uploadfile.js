@@ -18,14 +18,25 @@ const Mailer = () => {
     return(
         <div className="screen" >
             <div>
-                <h1>File Upload</h1>
                 <form className="uploadfile" onSubmit={sendEmail}>
+                <h1>File Upload</h1>
+                <div className="ui divider"></div>
+                <div className="ui form">
+                <div className="field"></div>
+
+                <div className="field">
+                <input
+                    type="text"
+                    name="iname"
+                    placeholder="Enter the certificate issuer's Name"
+                />
+                </div>
 
                 <div className="field">
                 <input
                     type="text"
                     name="name"
-                    placeholder="Enter your Name"
+                    placeholder="Enter the certificate holder's Name"
                 />
                 </div>
 
@@ -37,8 +48,12 @@ const Mailer = () => {
                 />
                 </div>
 
-                <input type="submit" value="Send" />
-    
+                <div className="field">
+                <textarea name='message' rows='4'/>
+                </div>
+
+                <button className="uploadfile-button" value="Send" >UPLOAD</button>
+            </div>
             </form>
             </div> 
         </div>
